@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <title>Age calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="gridcontainer">
+      <div class="container1">
+        <p class="first">DAY</p>
+        <p class="first">MONTH</p>
+        <p class="first year">YEAR</p>
+      </div>
+      <div class="container2">
+        <input type="number" onfocus="this.value=''" id="day" placeholder="DD" onclick="clearInputField()"/>
+        <input type="number" onfocus="this.value=''" id="month" placeholder="MM" onclick="clearInputField()" />
+        <input type="number" onfocus="this.value=''" id="year" placeholder="YYYY" onclick="clearInputField()" />
+      </div>
+      <div class="container4">
+        <span class="day wrong">Must be a valid date</span>
+        <span class="day invalid">Must be a valid day</span>
+        <span class="month invalid">Must be a valid month</span>
+        <span class="year1 invalid">Must be in the past</span>
+        <span class="day empty">This field is required</span>
+        <span class="month empty">This field is required</span>
+        <span class="year1 empty">This field is required</span>
+      </div>
+    </div>
+      <div class="line1">
+        <hr>
+        <svg onclick="validate()" class="line" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </div>
+      <div class="container3">
+        <h1><span class="date" id="years">--</span> years</h1>
+        <h1><span class="date" id="months">--</span> months</h1>
+        <h1><span class="date" id="days">--</span> days</h1>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
